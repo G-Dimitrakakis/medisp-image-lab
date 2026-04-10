@@ -184,13 +184,13 @@ cd ~/VsProjects/medisp-image-lab/backend
 
 ```bash
 python3 --version
-python3 -m venv ~/venvs/medisp-image-lab
+python3 -m venv ~/.venvs/medisp-image-lab
 ```
 
 Activate it:
 
 ```bash
-source ~/venvs/medisp-image-lab/bin/activate
+source ~/.venvs/medisp-image-lab/bin/activate
 ```
 
 ### Install Django
