@@ -5,7 +5,7 @@ Today, we will go from **zero → running the backend and frontend applications*
 
 ---
 
-## 🎯 Goal of Day 1
+## 🎯 GOAL of Day 1
 
 By the end of this session, you should be able to:
 
