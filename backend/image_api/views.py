@@ -1,7 +1,7 @@
 import base64
 from io import BytesIO
 
-from PIL import Image, UnidentifiedImageError
+from PIL import Image, ImageFilter, UnidentifiedImageError
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
@@ -19,6 +19,7 @@ def process_image(request):
 
     try:
         grayscale_image = Image.open(uploaded_file).convert("L")
+        grayscale_image = grayscale_image.filter(ImageFilter.GaussianBlur(radius=5))
     except UnidentifiedImageError:
         return Response(
             {"error": "The uploaded file is not a valid image."},
